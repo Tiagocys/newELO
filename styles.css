@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    font-family: afacad;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+button {
+    color: black;
+    cursor: pointer;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* altura do rodapé */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* altura do rodapé */
+    text-align: center;
+}
+
+nav {
+    height: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav img {
+    height: 100%;
+    margin-left: 20px;
+}
+
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.slogan {
+    max-width: 500px;
+    margin-left: 20px
+}
+
+.slogan h1 {
+    font-weight: 400;
+}
+
+.slogan span {
+    color: white;
+    font-weight: 450;
+    font-family: afacad;
+}
+
+.slogan button, .abrir-conta button {
+    margin-top: 20px;
+    background-color: #00631d;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.slogan button:hover, .abrir-conta button:hover {
+    background-color: #00bf2e;
+}
+
+.cadastro {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.cadastro h1 {
+    font-weight: 500;
+}
+
+form input, form button, .abrir-conta-button {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+form input {
+    color: black;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+}
+
+form label, button {
+    font-size: 20px;
+}
+
+form button {
+    background-color: #00bf2e;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #00631d;
+    color: white;
+}
+
+.abrir-conta {
+    margin-top: 20px;
+}
+
+.abrir-conta p {
+    font-size: 20px;
+}
+
+.abrir-conta button {
+    margin-top: 5px;
+}
+
+form label img {
+    max-width: 100%;
+}
+
+@media (max-width:830px) {
+    main {
+        flex-direction: column;
+    }
+
+    .slogan {
+        margin-bottom: 40px;
+        margin-right: 20px;
+    }
+}
+
+/*--Obrigado*/
+
+.obrigado p {
+    font-size: 20px;
+}
+
+.obrigado a {
+    text-align: center;
+    text-decoration: underline;
+}

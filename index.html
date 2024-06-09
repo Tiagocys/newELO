@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elo Trader</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta property="og:title" content="Elo Trader" />
+    <meta property="og:url" content="https://elotrading.online/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/Tiagocys/elotrading/main/OG.png" />
+    <meta property="og:description" content="Negocie como um trader profissional e deixe que o ELO Trader faz o gerenciamento de risco da sua conta." />
+
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <nav>
+                <img src="img/logo-conjunta.png" alt="">
+            </nav>
+            <main>
+                <div class="slogan">
+                    <h1>Negocie como um trader profissional e deixe que o <span>ELO</span> faz o gerenciamento de risco da sua conta.</h1>
+                    <a href="Elo Demo.ex4" download><button>Baixar demo</button></a>
+                </div>
+                <div class="cadastro">
+                    <h1>Cadastro de licença</h1>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="9d9d4480-e4dd-4be6-a774-e8f715058f6d">
+                        <input type="hidden" name="subject" value="Cadastro">
+                        <input type="hidden" name="from_name" value="Elo">
+                        <input type="hidden" name="redirect" value="https://elotrading.online/obrigado.html"> 
+
+                        <label for="nome">Nome completo</label>
+                        <input required name="nome" id="nome" type="text" minlength="5" placeholder="Insira seu nome">
+                        <label for="email">Email</label>
+                        <input required name="email" id="email" type="email" placeholder="Insira seu email">
+                        <label for="conta">Número da conta do Metatrader 4</label>
+                        <input id="conta" name="conta" type="text" required placeholder="Insira o número da conta" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+                        <button id="enviar">Enviar</button>
+                    </form>
+                    <div class="abrir-conta">
+                        <p>Ainda não tem uma conta?</p>
+                        <a href="https://fbs.partners?ibl=47822&ibp=7209644"><button class="abrir-conta-button">Criar nova conta</button></a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer id="footer">
+            <p>Elo © 2024</p>
+        </footer>
+      </div>
+    
+</body>
+</html>
